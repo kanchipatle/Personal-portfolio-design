@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kanchi Patle | Web Developer</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background: #f6f8fa;
+      color: #1a1a1a;
+      line-height: 1.4;
+    }
+
+    header {
+      background: #13057f;
+      color: #fff;
+      padding: 60px 20px 40px;
+      text-align: center;
+    }
+
+    header img {
+      width: 180px;
+      height: auto;
+      border-radius: 16px; 
+      margin-top: 25px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      border: 4px solid #f6f8fa;
+    }
+
+    nav {
+      background: #1c2d50;
+      display: flex;
+      justify-content: center;
+      padding: 10px 20px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 20px;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ff6b81;
+    }
+
+    section {
+      padding: 50px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #0b1c3b;
+      margin-bottom: 20px;
+    }
+
+    .about, .contact, .projects {
+      background: #ffffff;
+      padding: 25px;
+      margin-top: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.05);
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    .skill-tag {
+      background: #d3d0d0;
+      color: rgb(29, 29, 31);
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 0.9rem;
+    }
+
+    .project {
+      margin-top: 20px;
+    }
+
+    .project h3 {
+      margin-bottom: 5px;
+      color: #333;
+    }
+
+    .project p {
+      font-size: 0.95rem;
+      color: #555;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #0b1c3b;
+      color: #fff;
+      margin-top: 40px;
+    }
+
+    a {
+      color: #0b1c3b;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 1.8rem;
+      }
+      nav {
+        flex-direction: column;
+      }
+      nav a {
+        margin: 10px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Hello, I'm Kanchi Patle</h1>
+    <p>Creative Web Developer | Front-End Specialist</p>
+    
+    <img src="kanchi.jpg" alt="Kanchi Patle">
+  </header>
+
+  <nav>
+    <a href="#about">About Me</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <div class="about">
+      <h2>About Me</h2>
+      <p>Hi! I'm Kanchi Patle, a front-end web developer passionate about creating beautiful and functional web experiences. I specialize in HTML, CSS, JavaScript, and React, and I’m always learning new tech to improve my craft.</p>
+      <h3>Education</h3>
+      <ul>
+        <li>BTECH. in Information technology – JDCOEM</li>
+        <li>Web Development Certificate – Online Bootcamp</li>
+      </ul>
+      <h3>Experience</h3>
+      <ul>
+        <li>Freelance Front-End Developer (2020–Present)</li>
+        <li>Intern – ABC Tech Company (2019)</li>
+      </ul>
+      <h3>Skills</h3>
+      <div class="skills">
+        <span class="skill-tag">HTML</span>
+        <span class="skill-tag">CSS</span>
+        <span class="skill-tag">JavaScript</span>
+        <span class="skill-tag">React</span>
+        <span class="skill-tag">Git</span>
+        <span class="skill-tag">Responsive Design</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="projects">
+      <h2>Projects</h2>
+
+      <div class="project">
+        <h3>Portfolio Website</h3>
+        <p>A clean, responsive portfolio site using HTML, CSS, and JavaScript to showcase my work.</p>
+      </div>
+
+      <div class="project">
+        <h3>To-Do List App</h3>
+        <p>React app with local storage to manage daily tasks, filters, and animations.</p>
+      </div>
+
+      <div class="project">
+        <h3>Landing Page Design</h3>
+        <p>Marketing landing page for a startup using Flexbox, CSS Grid, and mobile-first layout.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="contact">
+      <h2>Contact</h2>
+      <p>Email: kanchipatle@example.com</p>
+      <p>GitHub: <a href="https://github.com/kanchipatle" target="_blank">github.com/kanchipatle</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/kanchipatle" target="_blank">linkedin.com/in/kanchipatle</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Kanchi Patle. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
