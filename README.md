@@ -1,21 +1,36 @@
-# Personal Portfolio Design
+# Kanchi Patle — Personal Portfolio
 
-A personal portfolio webpage layout built with HTML and embedded CSS. It demonstrates a hero section, navigation, About, Projects, Skills, and Contact sections.
+A responsive personal portfolio website introducing my background, current technical learning, selected projects and education.
+
+## Live preview
+
+This repository contains the website source. To preview it locally, clone the repository and open `index.html` in a browser. GitHub Pages can also be enabled in the repository settings to publish it.
+
+## Sections
+
+- Introduction and current career focus
+- Technical skills, presented at my current learning level
+- Selected software and web development projects
+- Education
+- GitHub and LinkedIn links
+
+## Featured work
+
+- [CareerTrack — Job & Internship Application Manager](https://github.com/kanchipatle/careertrack-job-application-manager) — [Live demo](https://careertrack-job-application-manager.onrender.com)
+- [Weather App](https://github.com/kanchipatle/weather-app)
+- [Stopwatch Web Application](https://github.com/kanchipatle/stop-watch-web-application)
+- [Tic-Tac-Toe](https://github.com/kanchipatle/tik-tac-toe)
 
 ## Technologies
-- HTML5
-- CSS3
-- Responsive layout using a media query
+
+HTML5, CSS3 and JavaScript.
 
 ## Run locally
+
 1. Clone this repository.
 2. Keep `index.html` and `kanchi.jpg` in the same folder.
-3. Open `index.html` in a browser.
+3. Open `index.html` in a modern browser.
 
-## Before using this as a live portfolio
-Review every biography, skill, education, certification, project, and experience entry in the page. Replace any sample or outdated content with details that are accurate and verifiable. In particular, do not publish placeholder experience or project claims.
+## Notes
 
-## Possible next improvements
-- Move embedded CSS into a separate stylesheet.
-- Add links to real project repositories and professional profiles.
-- Improve keyboard accessibility and test the layout on mobile devices.
+This is a student portfolio and is updated as I build and improve projects. Skills and project descriptions are intentionally kept accurate to the work represented in the linked repositories.
