@@ -1,215 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfolio of Kanchi Patle, an Information Technology student exploring software development and building practical projects.">
+  <meta name="theme-color" content="#101827">
   <title>Kanchi Patle | IT Student & Aspiring Software Developer</title>
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Segoe UI', sans-serif;
-    }
-
-    body {
-      background: #f6f8fa;
-      color: #1a1a1a;
-      line-height: 1.4;
-    }
-
-    header {
-      background: #13057f;
-      color: #fff;
-      padding: 60px 20px 40px;
-      text-align: center;
-    }
-
-    header img {
-      width: 180px;
-      height: auto;
-      border-radius: 16px; 
-      margin-top: 25px;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-      border: 4px solid #f6f8fa;
-    }
-
-    nav {
-      background: #1c2d50;
-      display: flex;
-      justify-content: center;
-      padding: 10px 20px;
-    }
-
-    nav a {
-      color: #fff;
-      text-decoration: none;
-      margin: 0 20px;
-      font-weight: bold;
-      transition: color 0.3s;
-    }
-
-    nav a:hover {
-      color: #ff6b81;
-    }
-
-    section {
-      padding: 50px 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
-
-    h2 {
-      color: #0b1c3b;
-      margin-bottom: 20px;
-    }
-
-    .about, .contact, .projects {
-      background: #ffffff;
-      padding: 25px;
-      margin-top: 20px;
-      border-radius: 12px;
-      box-shadow: 0 0 15px rgba(0,0,0,0.05);
-    }
-
-    .skills {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-top: 10px;
-    }
-
-    .skill-tag {
-      background: #d3d0d0;
-      color: rgb(29, 29, 31);
-      padding: 6px 14px;
-      border-radius: 20px;
-      font-size: 0.9rem;
-    }
-
-    .project {
-      margin-top: 20px;
-    }
-
-    .project h3 {
-      margin-bottom: 5px;
-      color: #333;
-    }
-
-    .project p {
-      font-size: 0.95rem;
-      color: #555;
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #0b1c3b;
-      color: #fff;
-      margin-top: 40px;
-    }
-
-    a {
-      color: #0b1c3b;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    @media (max-width: 768px) {
-      header h1 {
-        font-size: 1.8rem;
-      }
-      nav {
-        flex-direction: column;
-      }
-      nav a {
-        margin: 10px 0;
-      }
-    }
+    :root{--bg:#0b1220;--panel:#121d2e;--panel2:#172438;--text:#edf3fb;--muted:#aab8ca;--accent:#77b7ff;--line:#293b53;--max:1040px}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.65 system-ui,-apple-system,"Segoe UI",sans-serif}
+    a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+    .wrap{width:min(var(--max),calc(100% - 40px));margin:auto}.topbar{position:sticky;top:0;z-index:5;background:#0b1220ed;border-bottom:1px solid var(--line);backdrop-filter:blur(12px)}
+    nav{min-height:68px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{font-weight:750;color:var(--text);letter-spacing:.3px}.navlinks{display:flex;gap:24px;align-items:center}.navlinks a{color:var(--muted);font-size:.95rem}
+    .menu{display:none;background:var(--panel);border:1px solid var(--line);color:var(--text);padding:8px 12px;border-radius:8px}
+    header{padding:92px 0 76px;background:radial-gradient(ellipse at 80% 0%,#1d4266 0,transparent 42%),var(--bg)}
+    .eyebrow{color:var(--accent);font-weight:650;letter-spacing:1.6px;text-transform:uppercase;font-size:.82rem}
+    h1{font-size:clamp(2.5rem,6vw,4.6rem);line-height:1.08;letter-spacing:-2px;margin:12px 0 18px}.intro{max-width:700px;color:var(--muted);font-size:1.15rem}
+    .actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.btn{display:inline-block;padding:11px 17px;border-radius:9px;background:var(--accent);color:#081321;font-weight:700}.btn.secondary{background:transparent;border:1px solid var(--line);color:var(--text)}
+    section{padding:64px 0;scroll-margin-top:78px}.section-title{font-size:1.8rem;margin:0 0 22px;letter-spacing:-.5px}.about,.card{background:var(--panel);border:1px solid var(--line);border-radius:15px;padding:24px}.muted{color:var(--muted)}
+    .tags{display:flex;flex-wrap:wrap;gap:9px;margin-top:18px}.tag{background:var(--panel2);border:1px solid var(--line);border-radius:999px;padding:5px 11px;color:#d7e5f6;font-size:.9rem}
+    .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.card{display:flex;flex-direction:column;min-height:210px}.card h3{margin:0 0 8px;font-size:1.16rem}.card p{margin:0 0 18px;color:var(--muted)}.card .stack{margin-top:auto;color:#c4d4e8;font-size:.88rem}.card a{font-weight:650}
+    .education{border-left:3px solid var(--accent);padding:2px 0 2px 18px}.contact-links{display:flex;gap:18px;flex-wrap:wrap}
+    footer{border-top:1px solid var(--line);padding:24px 0;color:var(--muted);font-size:.9rem}
+    @media(max-width:680px){.menu{display:block}.navlinks{display:none;position:absolute;top:68px;left:0;right:0;padding:18px 20px;background:var(--panel);border-bottom:1px solid var(--line);flex-direction:column;align-items:flex-start}.navlinks.open{display:flex}header{padding:70px 0 58px}.grid{grid-template-columns:1fr}section{padding:48px 0}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
   </style>
 </head>
 <body>
-
-  <header>
-    <h1>Hello, I'm Kanchi Patle</h1>
-    <p>B.Tech Information Technology Student | Aspiring Software Developer</p>
-    
-    <img src="kanchi.jpg" alt="Kanchi Patle">
-  </header>
-
-  <nav>
-    <a href="#about">About Me</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-  </nav>
-
-  <section id="about">
-    <div class="about">
-      <h2>About Me</h2>
-      <p>Hi, I’m Kanchi Patle, a B.Tech Information Technology student interested in software development and data analytics. I enjoy learning by building projects and improving my problem-solving and programming skills.</p>
-      <h3>Education</h3>
-      <ul>
-        <li>B.Tech in Information Technology</li>
-      </ul>
-      <h3>Current Focus</h3>
-      <p>Building academic and personal projects while developing practical software skills.</p>
-      <h3>Skills</h3>
-      <div class="skills">
-        <span class="skill-tag">HTML</span>
-        <span class="skill-tag">CSS</span>
-        <span class="skill-tag">JavaScript</span>
-        <span class="skill-tag">Python (Fundamentals)</span>
-        <span class="skill-tag">Flask (Beginner)</span>
-        <span class="skill-tag">Git & GitHub</span>
-        <span class="skill-tag">Responsive Design</span>
-      </div>
-    </div>
-  </section>
-
-  <section id="projects">
-    <div class="projects">
-      <h2>Projects</h2>
-
-      <div class="project">
-        <h3>Portfolio Website</h3>
-        <p>A clean, responsive portfolio site using HTML, CSS, and JavaScript to showcase my work.</p>
-      </div>
-
-      <div class="project">
-        <h3>Stopwatch Web Application</h3>
-        <p>A browser-based stopwatch with start, pause, reset, and lap-time features using HTML, CSS, and JavaScript.</p>
-        <a href="https://github.com/kanchipatle/stop-watch-web-application" target="_blank" rel="noopener">View repository</a>
-      </div>
-
-      <div class="project">
-        <h3>Tic-Tac-Toe</h3>
-        <p>A two-player browser game with turn handling, win and draw detection, and restart functionality.</p>
-        <a href="https://github.com/kanchipatle/tik-tac-toe" target="_blank" rel="noopener">View repository</a>
-      </div>
-
-      <div class="project">
-        <h3>Weather App</h3>
-        <p>A simple weather interface that uses the OpenWeatherMap API to display current conditions for Nagpur.</p>
-        <a href="https://github.com/kanchipatle/weather-app" target="_blank" rel="noopener">View repository</a>
-      </div>
-    </div>
-  </section>
-
-  <section id="contact">
-    <div class="contact">
-      <h2>Contact</h2>
-      
-      <p>GitHub: <a href="https://github.com/kanchipatle" target="_blank">github.com/kanchipatle</a></p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/kanchi-rajay-patle-2ba086373/" target="_blank">linkedin.com/in/kanchi-rajay-patle-2ba086373</a></p>
-    </div>
-  </section>
-
-  <footer>
-    <p>© 2025 Kanchi Patle. All rights reserved.</p>
-  </footer>
-
+  <div class="topbar"><nav class="wrap" aria-label="Main navigation">
+    <a class="brand" href="#home">KANCHI PATLE</a>
+    <button class="menu" id="menuButton" aria-expanded="false" aria-controls="navLinks">Menu</button>
+    <div class="navlinks" id="navLinks"><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#education">Education</a><a href="#contact">Contact</a></div>
+  </nav></div>
+  <header id="home"><div class="wrap">
+    <div class="eyebrow">Information Technology Student · Nagpur, India</div>
+    <h1>Hi, I'm Kanchi.<br>I'm building my path in software development.</h1>
+    <p class="intro">A final-year B.Tech Information Technology student who enjoys learning through hands-on projects. Currently strengthening programming fundamentals and building practical web applications.</p>
+    <div class="actions"><a class="btn" href="#projects">Explore my projects</a><a class="btn secondary" href="https://github.com/kanchipatle" target="_blank" rel="noopener noreferrer">GitHub profile</a></div>
+  </div></header>
+  <main>
+    <section id="about"><div class="wrap"><h2 class="section-title">About me</h2><div class="about">
+      <p>I'm pursuing a B.Tech in Information Technology and exploring software development, Python, web technologies and data analytics. I like turning what I learn into small, working projects and improving them step by step.</p>
+      <p class="muted">I'm currently looking for an opportunity to learn from a professional team, contribute to real tasks and grow as a software developer.</p>
+    </div></div></section>
+    <section id="skills"><div class="wrap"><h2 class="section-title">Technical skills</h2><div class="about">
+      <p class="muted">Skills are presented at my current learning level.</p>
+      <div class="tags"><span class="tag">Python fundamentals</span><span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">JavaScript</span><span class="tag">Flask</span><span class="tag">SQLite</span><span class="tag">Git & GitHub</span><span class="tag">VS Code</span><span class="tag">DBMS</span><span class="tag">OOP</span><span class="tag">Data Structures & Algorithms</span></div>
+    </div></div></section>
+    <section id="projects"><div class="wrap"><h2 class="section-title">Selected projects</h2><div class="grid">
+      <article class="card"><h3>CareerTrack — Job & Internship Application Manager</h3><p>A Flask web application to organise applications, track status, manage follow-up reminders, search and filter records, and export data to CSV.</p><div class="stack">Python · Flask · SQLite · HTML · CSS · JavaScript</div><p><a href="https://github.com/kanchipatle/careertrack-job-application-manager" target="_blank" rel="noopener noreferrer">Source code</a> · <a href="https://careertrack-job-application-manager.onrender.com" target="_blank" rel="noopener noreferrer">Live demo</a></p></article>
+      <article class="card"><h3>Multimodal Explainable AI for Heart Attack Risk Prediction</h3><p>Ongoing academic project exploring wearable-sensor data and healthcare analytics, with an ESP32-based sensor component and an explainable AI approach.</p><div class="stack">ESP32 · Arduino IDE · Python · Google Colab</div><p class="muted">Academic project · In progress</p></article>
+      <article class="card"><h3>Weather App</h3><p>A browser-based weather interface that displays current weather details for Nagpur using the OpenWeatherMap API.</p><div class="stack">HTML · CSS · JavaScript · REST API</div><p><a href="https://github.com/kanchipatle/weather-app" target="_blank" rel="noopener noreferrer">Source code</a></p></article>
+      <article class="card"><h3>Stopwatch Web Application</h3><p>A browser stopwatch with start, pause, resume, reset and lap-time functionality.</p><div class="stack">HTML · CSS · JavaScript</div><p><a href="https://github.com/kanchipatle/stop-watch-web-application" target="_blank" rel="noopener noreferrer">Source code</a></p></article>
+      <article class="card"><h3>Tic-Tac-Toe</h3><p>A two-player browser game with turn handling, win and draw detection, and a restart option.</p><div class="stack">HTML · CSS · JavaScript</div><p><a href="https://github.com/kanchipatle/tik-tac-toe" target="_blank" rel="noopener noreferrer">Source code</a></p></article>
+      <article class="card"><h3>Responsive Web Application</h3><p>A fictional company landing page built to practise responsive layouts, navigation and interactive page behaviour.</p><div class="stack">HTML · CSS · JavaScript</div><p><a href="https://github.com/kanchipatle/Responsive-web-application" target="_blank" rel="noopener noreferrer">Source code</a></p></article>
+    </div></div></section>
+    <section id="education"><div class="wrap"><h2 class="section-title">Education</h2><div class="about education"><h3>B.Tech — Information Technology</h3><p class="muted">J D College of Engineering and Management, Nagpur · DBATU</p><p class="muted">Expected graduation: 2027</p></div></div></section>
+    <section id="contact"><div class="wrap"><h2 class="section-title">Let's connect</h2><div class="about"><p class="muted">I'm open to genuine internship opportunities, project collaboration and learning opportunities in software and IT.</p><div class="contact-links"><a href="https://github.com/kanchipatle" target="_blank" rel="noopener noreferrer">GitHub</a><a href="https://www.linkedin.com/in/kanchi-rajay-patle-2ba086373/" target="_blank" rel="noopener noreferrer">LinkedIn</a></div></div></div></section>
+  </main>
+  <footer><div class="wrap">© 2026 Kanchi Patle · Built with HTML, CSS and JavaScript.</div></footer>
+  <script>
+    const menuButton = document.getElementById('menuButton');
+    const navLinks = document.getElementById('navLinks');
+    menuButton.addEventListener('click', () => {
+      const isOpen = navLinks.classList.toggle('open');
+      menuButton.setAttribute('aria-expanded', String(isOpen));
+    });
+    navLinks.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
+      navLinks.classList.remove('open');
+      menuButton.setAttribute('aria-expanded', 'false');
+    }));
+  </script>
 </body>
 </html>
